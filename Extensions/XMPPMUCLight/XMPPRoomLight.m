@@ -272,7 +272,6 @@ static NSString *const XMPPRoomLightDestroy = @"urn:xmpp:muclight:0#destroy";
 		NSXMLElement *query = [NSXMLElement elementWithName:@"query" xmlns:@"urn:xmpp:muclight:0#create"];
 		NSXMLElement *configuration = [NSXMLElement elementWithName:@"configuration"];
 		[configuration addChild:[NSXMLElement elementWithName:@"roomname" stringValue:roomname]];
-        [configuration addChild:[NSXMLElement elementWithName:@"subject" stringValue:roomname]];
 		
 		NSXMLElement *occupants = [NSXMLElement elementWithName:@"occupants"];
 		for (XMPPJID *jid in members){
